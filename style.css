@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Courier, monospace;
+  background-color: #04090f;
+  color: #f4f4f4;
+}
+
+a {
+  color: #f4f4f4;
+}
+
+h4 {
+  margin-top: 1em;
+  margin-bottom: -1em;
+}
+
+#main{
+  padding: 10% 20%;
+  position: relative;
+}
+
+#about, #experience, #education, #skills, #contact{
+  margin: 10%;
+  text-align: justify;
+}
+
+.omni {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+}
+
+.work {
+  margin-left: 1.5em;
+}
+
+.typewriter {
+  font-family: Courier, monospace;
+  display: inline-block;
+}
+
+.typewriter-text {
+  display: block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 5s steps(30, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid #990000;
+  box-sizing: border-box;
+}
+
+#footer {
+  margin-bottom: -20%;
+  text-align: center;
+}
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: #990000; 
+  }
+}
+
+@media (max-width: 48em) {
+  #main{ 
+    padding: 10% 5%;
+    position: relative;
+  }
+  #about, #experience, #education, #skills, #contact {
+    display: grid;
+    text-align: left;
+  }
+  #about, #experience, #education, #skills, #contact p {
+    text-align: left;
+  }
+  .typewriter {
+    padding: 5%;
+  }  
+  .typewriter-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 28em) {
+  #main{ 
+    padding: 10% 5%;
+    position: relative;
+  }
+  #about, #experience, #education, #skills, #contact {
+    display: grid;
+    text-align: left;
+  }
+  #about, #experience, #education, #skills, #contact p {
+    text-align: left;
+  }
+  .typewriter {
+    padding: 3%;
+  }  
+  .typewriter-text {
+    font-size: 15px;
+  } 
+}
